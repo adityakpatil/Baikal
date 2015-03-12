@@ -5,3 +5,6 @@
     Order deny,allow
     Deny from all
 </IfModule>
+RewriteEngine On
+RewriteRule /.well-known/carddav /baikal/card.php [R,L]
+RewriteRule /.well-known/caldav /baikal/cal.php [R,L]
